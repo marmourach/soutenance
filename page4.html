@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/page4.css">
+</head>
+<body>
+    <form>
+
+
+        <div class="pop">
+
+            <a id="#un" href="./index.html">home</a>
+               
+            
+                <h1>sign in</h1>
+                <div class="person">
+                    <div class="name">
+                        <label for="name"></label>
+                     <input type="text" id="name" placeholder="username">
+                    </div>
+        
+                    <div class="mail">
+                        <label for="password"></label>
+                        <input type="text" id="password" placeholder="enter your password" >
+                    </div>
+
+                    <button id="signin"> sign in</button>
+
+                </div>
+
+               
+            
+
+
+            <p id="signinp">don't have an account ? <a id="deux" href="#">sign up</a></p>
+            
+         
+         
+         <div class="is_hidden signup">
+             <h1>
+                 create an account
+             </h1>
+            <div class="name">
+                <label for="name">create a username </label>
+             <input type="text" id="name" placeholder="username">
+            </div>
+
+            <div class="mail">
+                <label for="mail">enter your mail </label>
+             <input type="email" id="name" placeholder="exemple@exemple.fr">
+         </div>
+
+            <button id="signupbtn">sign up</button>
+
+
+         </div>
+         
+          <div class="is_hidden payment">
+            <div class="cardl1">
+                <h2><strong>PAYMENT DETAILS</strong></h2>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="name on card">
+                
+            </div>
+            <div class="card">
+                <div class="cardl2">
+                    <label for="card"></label>
+                    <input type="number" id="cardnumber" placeholder="cardnumber">
+                    
+                </div>
+                <div>
+                    <label for="expiry"></label>
+                    <input type="number" id="expiry" placeholder="expiry">
+                </div>
+                <div>
+                    <label for="cvv"></label>
+                    <input type="number" id="cvv" placeholder="cvv">
+                </div> 
+            </div>
+            <div class="bottom">
+                <a href="indexS.html"><button id="paybtn">pay</button></a>
+                </div>
+           
+
+          </div> 
+             
+                
+             
+        
+        </div>
+
+
+
+        <script>
+            let sign_up = document.querySelector('#deux');
+            let sign_upp = document.querySelector('.signup');
+            let sign_up_btn = document.querySelector('#signupbtn');
+            let paybtn = document.querySelector('#paybtn');
+            let ongletpay = document.querySelector('.payment');
+
+
+            sign_up.addEventListener('click', function(){
+                sign_upp.classList.remove('is_hidden');
+
+            })
+            
+            
+            sign_up_btn.addEventListener('click', function(){
+                ongletpay.classList.remove('is_hidden');
+
+            })
+
+
+            paybtn.addEventListener('click', function(){
+                ongletpay.classList.remove('is_hidden');
+
+            })
+
+
+
+
+
+
+
+        </script>
+    
+</body>
+</html>

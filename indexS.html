@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <title>Href Attribute Example</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/34eb52ac8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul id="menu">
+          <li id="icon_bar">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+          <li> <a href="">home</a></li>
+          <li> <a href="">News</a></li>
+          <li> <a href="">Streaming</a></li>
+          <li> <a href="">Kids</a></li>
+        </ul>
+      </nav>
+      <div class="link-list-btn">
+        <a class="search" href="./index.html">Search</a>
+        <a href="./page4.html" class="btn2 m-l-2"><i class="fa-solid fa-user"></i> </a></div>
+    </div>
+  </header>
+
+
+  <div class="fenetre is_hidden">
+ 
+
+  </div>
+  <section class="les_films m-t-2">
+    <div class="container">
+      <ul class="films">
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/nicole kidman.jpg" >
+            <span class="nom_film">company1</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/tom cruise.jpg"/>
+            <span class="nom_film">company2</span>
+          </a>
+        </li>
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/amberheard.jpg" />
+            <span class="nom_film">company3</span>
+          </a>
+        </li>
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/johny depp.jpg" />
+            <span class="nom_film">company4</span>
+          </a>
+        </li>
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/angelina jolie.jpg"/>
+            <span class="nom_film">company5</span>
+          </a>
+        </li>
+
+      <!-- </ul>
+    </div>
+  </section>
+  <section class="les_films">
+    <div class="container">
+      <ul class="films"> -->
+
+        <li>
+          <a href=".page2.html">
+            <img src="./images/" />
+            <span class="nom_film">company6</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    let boxverif = document.querySelectorAll('#box');
+    let tick = document.querySelectorAll('#box i');
+    let icon_croix = document.querySelector('.icon_croix i');
+    let onglet = document.querySelector('.fenetre');
+    let tripplebar = document.querySelector('#icon_bar');
+    let fenpays = document.querySelector('.acteurs');
+
+    tripplebar.addEventListener('click', function () {
+      onglet.classList.remove('is_hidden');
+    })
+
+    icon_croix.addEventListener('click', function () {
+      onglet.classList.add('is_hidden');
+    })
+
+
+    boxverif[1].addEventListener('click', function () {
+      console.log('ok');
+      tick[1].classList.remove('is_hidden');
+    })
+  </script>
+
+  
+
+</body>
+
+</html>
